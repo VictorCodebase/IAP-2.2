@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>{% block title %}Resort's Listings{% endblock %}</title>
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Oleo+Script+Swash+Caps:wght@400;700&display=swap" rel="stylesheet" />
+	</head>
+	<body>
+		{% include 'nav.html' %} {% block content %}
+		<div class="container">
+			<div class="cards-parent">
+				{% for resort in resorts %}
+				<div class="mb-4">{% include 'card_component.html' with resort=resort %}</div>
+				{% endfor %}
+			</div>
+		</div>
+		<style>
+			.cards-parent {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: space-around;
+			}
+		</style>
+		{% endblock content %}
+	</body>
+</html>

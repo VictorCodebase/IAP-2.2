@@ -1,0 +1,95 @@
+{% load static %}
+
+    <style>
+        /* Custom CSS for navbar */
+        .navbar-brand {
+            width: 25%; /* Quarter width for the navbar brand */
+            text-align: center;
+            display: grid;
+            grid-template-columns: 1fr; /* Single column layout */
+            grid-template-rows: auto auto; /* Automatic height for logo and text */
+            place-items: center; /* Center content vertically and horizontally */
+        }
+        .dark-shade {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            max-height: 45px;
+            background-color: rgba(51, 27, 0, 0.661);
+            border-radius: 20px; /* Border radius for the logo */
+        }
+        .navbar-brand > * {
+            margin: 0; /* Remove default margin */
+            grid-row: 1;
+            grid-column: 1;
+        }
+        .navbar-brand img {
+            max-height: 45px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 20px; /* Border radius for the logo */
+        }
+        .resort-text {
+          font-family: "Arizonia", cursive;
+            font-size: 5rem;
+            line-height: 0;
+            font-weight: 400;
+            font-style: normal;
+            color: rgb(235, 235, 235);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 01);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <!-- Navbar brand/logo -->
+            <a class="navbar-brand" href="#">
+                <img
+                    src="https://images.unsplash.com/photo-1610641818989-c2051b5e2cfd?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Beach Resort Logo"
+                />
+                <div class="dark-shade"></div>
+                <div class="resort-text">Resort's</div>
+                <!-- Cursive text on top of the logo -->
+            </a>
+            <!-- Navbar toggle button (collapsed on mobile) -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                {% block navbar_links %}
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Resorts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Activities</a>
+                    </li>
+                </ul>
+                {% endblock %}
+                <!-- Search bar -->
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Bootstrap JS (optional, only if you need dropdowns or other interactive features) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

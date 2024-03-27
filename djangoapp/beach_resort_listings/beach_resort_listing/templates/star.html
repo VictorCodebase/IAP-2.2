@@ -1,0 +1,13 @@
+<div class="rating">
+	{% for star in "12345" %} {# Assuming 5 stars as maximum #} {% if star|add:0 <= resort.rating %}
+	<span class="fas fa-star checked"></span> {# Filled star #} {% else %} <span class="fas fa-star"></span> {# Unfilled star #} {% endif %} {% endfor %}
+</div>
+
+<style>
+	.rating {
+		height: 30px;
+	}
+	.checked {
+		color: orange;
+	}
+</style>
