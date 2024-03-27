@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -11,6 +13,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Oleo+Script+Swash+Caps:wght@400;700&display=swap" rel="stylesheet" />
+		<script src="{% static 'beach_resort_listing/js/funct.js' %}"></script>
 	</head>
 	<body>
 		{% include 'nav.html' %} {% block content %}
