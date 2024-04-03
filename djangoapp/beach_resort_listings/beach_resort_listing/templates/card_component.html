@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card card-component">
 	<img src="{{ resort.image }}" class="card-img-top" alt="{{ resort.name }}" />
 	<div class="card-body">
 		<h5 class="card-title">{{ resort.name }}</h5>
@@ -7,19 +7,20 @@
 			<p class="card-text"><i class="fas fa-map-marker-alt"></i> {{ resort.location }}</p>
 		</div>
 
-		<p class="card-text">{{ resort.description }}</p>
+		<p class="card-text">{{ resort.desc }}</p>
 		<div class="available-meta">
 			<p class="card-text">Amenities:</p>
-            {% include 'amenities.html' %}
+			{% include 'amenities.html' %}
 		</div>
 		<p class="card-text">Price: {{ resort.price }} Ksh</p>
-		<a href="{{ resort.url }}" class="btn btn-primary">Learn More</a>
+		<button onclick="openlisting('{{ serialized_resorts }}')" href="{{ resort.image }}" class="btn btn-primary">Learn More</button>
 	</div>
 </div>
+
 <style>
-	.card {
-		max-width: 25rem;
-		min-width: 18rem;
+	.card-component {
+		max-width: 20rem;
+		min-width: 15rem;
 		margin: 0 auto;
 		margin-top: 20px;
 		margin-left: 1rem;

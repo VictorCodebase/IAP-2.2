@@ -1,0 +1,112 @@
+<div class="card listing_display_card" id="listing_card">
+	<div class="listing-img-overlay">
+		<i class="fas fa-times cancel-icon cancel-listing" id="listing_cancel" onclick="closelisting()"></i>
+		<img
+			src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+			class="card-img-top"
+			alt="Sample Resort Image"
+		/>
+		<div class="dark-shade"></div>
+		<h5 class="listing-card-title">Example Resort</h5>
+	</div>
+
+	<div class="card-body">
+		<div class="rating-meta">
+			<div class="rating">{% include 'star.html' %}</div>
+			<p class="card-text"><i class="fas fa-map -marker-alt"></i> {{ resort.location }}</p>
+		</div>
+		<p class="card-text">{{ resort.description }}</p>
+		<div class="available-meta">
+			<p class="card-text">More of "Example Resort":</p>
+			{% include 'amenities.html' %}
+		</div>
+		<div class="resort-shots">
+			{% for image in "*********" %}
+			<div class="resort-shot" draggable="false"></div>
+			{% endfor %}
+		</div>
+		<button type="button" class="btn btn-primary">Book</button>
+		<button class="btn btn-secondary">Open Official site</button>
+	</div>
+
+	<style>
+		.listing_display_card {
+			display: none;
+			min-width: 60lvw;
+			max-width: 80lvw;
+			height: 90lvh;
+			height: 90vh;
+			z-index: 1;
+			position: sticky;
+			bottom: 5vh;
+			bottom: 5lvh;
+			left: 0;
+			right: 0;
+			margin-left: auto;
+			margin-right: auto;
+			box-shadow: 3px 12px 8px 4px rgba(0, 0, 0, 0.2);
+			overflow: hidden;
+			outline: solid 1px rgba(0, 0, 0, 0.5);
+			background-color: rgb(234, 234, 234);
+		}
+		.listing-img-overlay {
+			position: relative;
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr;
+			place-items: center;
+		}
+		.listing-img-overlay > img,
+		.dark-shade,
+		.listing-card-title {
+			margin: 0;
+			grid-row: 1;
+			grid-column: 1;
+		}
+		.listing-card-title {
+			color: aliceblue;
+			font-size: 250%;
+		}
+		.resort-shots {
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+			height: 35vh;
+			overflow-x: scroll;
+		}
+		.resort-shot {
+			position: relative;
+			min-width: 15rem;
+			margin-left: 1rem;
+			background-color: rgba(0, 0, 0, 0.49);
+			height: 95%;
+			background-image: url("https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+			background-size: cover;
+			background-position: center;
+		}
+		.dark-shade {
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.586);
+		}
+		.cancel-listing {
+			z-index: 2;
+			position: absolute;
+			top: 0.5rem;
+			right: 1rem;
+			color: aliceblue;
+			z-index: 2;
+		}
+		.cancel-listing:hover {
+			cursor: pointer;
+			transition: 0.5s;
+			transform: rotate(180deg);
+			color: rgb(192, 93, 0);
+		}
+		.cancel-listing:active {
+			color: rgb(192, 93, 0);
+		}
+	</style>
+</div>

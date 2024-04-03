@@ -10,7 +10,7 @@
             grid-template-rows: auto auto; /* Automatic height for logo and text */
             place-items: center; /* Center content vertically and horizontally */
         }
-        .dark-shade {
+        .dark-img-shade {
             top: 0;
             left: 0;
             width: 100%;
@@ -39,6 +39,9 @@
             color: rgb(235, 235, 235);
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 01);
         }
+        .cancel-search{
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -50,7 +53,7 @@
                     src="https://images.unsplash.com/photo-1610641818989-c2051b5e2cfd?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="Beach Resort Logo"
                 />
-                <div class="dark-shade"></div>
+                <div class="dark-img-shade"></div>
                 <div class="resort-text">Resort's</div>
                 <!-- Cursive text on top of the logo -->
             </a>
@@ -74,17 +77,18 @@
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Resorts</a>
+                        <a class="nav-link" href="#">Latest</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Activities</a>
+                        <a class="nav-link" href="#">Editors Picks</a>
                     </li>
                 </ul>
                 {% endblock %}
                 <!-- Search bar -->
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <input class="form-control mr-sm-2" type="search" id="search_input" placeholder="Search" aria-label="Search" />
+                    <button onclick="search('search')" class="btn btn-outline-primary my-2 my-sm-0" type="button">Search</button>
+                    <button onclick="search('cancel')" class="btn my-2 my-sm-0 cancel-search" id="cancel_search">Cancel search</button>
                 </form>
             </div>
         </div>
