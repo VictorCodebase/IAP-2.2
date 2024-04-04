@@ -8,12 +8,10 @@
 		</div>
 
 		<p class="card-text">{{ resort.desc }}</p>
-		<div class="available-meta">
-			<p class="card-text">Amenities:</p>
-			{% include 'amenities.html' %}
-		</div>
-		<p class="card-text">Price: {{ resort.price }} Ksh</p>
-		<button onclick="openlisting('{{ serialized_resorts }}')" href="{{ resort.image }}" class="btn btn-primary">Learn More</button>
+		
+		<button onclick="openlisting('{{ serialized_resorts }}', '{{ resort.id }}')" href="{{ resort.image }}" class="btn btn-primary">
+			Learn More
+		</button>
 	</div>
 </div>
 
