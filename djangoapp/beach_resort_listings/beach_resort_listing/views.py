@@ -18,6 +18,7 @@ def home(request):
     img10 = imageSuite("resort Image", "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=600", "exterior")
     images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10]
     
+    #had to change this up as we were no longer getting the values to serialize from an array
     serialized_resorts = [serialize_resort(resort) for resort in Resorts.objects.all()]
 
     return render(request, 'home.html', {'resorts': Resorts.objects.all(), 'serialized_resorts': serialized_resorts})
