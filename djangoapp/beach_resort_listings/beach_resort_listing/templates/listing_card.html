@@ -12,15 +12,19 @@
 	</div>
 
 	<div class="card-body">
-		<button type="button" class="btn btn-primary listing-button">Book</button>
-		<button class="btn btn-secondary listing-button">Open Official site</button>
-		<h4>Expect to find</h4>
-		<div class="amenities-meta" id="resort_amenities"></div>
-		<h4>About the resort</h4>
-		<p class="card-text" id="resort_description">{{ resort.description }}</p>
-		<div class="available-meta">
-			<h4>Trending</h4>
-		</div>
+        <button type="button" class="btn btn-primary listing-button">Book</button>
+        <button class="btn btn-secondary listing-button">Open Official site</button>
+        <h4>Expect to find</h4>
+        <div class="amenities-meta" id="resort_amenities">
+            {% for amenity in resort.amenities %}
+                <div class="amenity">{{ amenity }}</div>
+            {% endfor %}
+        </div>
+        <h4>About the resort</h4>
+        <p class="card-text" id="resort_description">{{ resort.description }}</p>
+        <div class="available-meta">
+            <h4>Trending</h4>
+        </div>
 		<div class="resort-shots" id="resort_shots">
 			<!-- {% for image in "*******" %}
 			<div class="resort-shot" draggable="false">
