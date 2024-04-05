@@ -16,18 +16,29 @@
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 		<script src="{% static 'beach_resort_listing/js/funct.js' %}"></script>
+
+<!--changed the logic here kidogo-->
+
 	</head>
 	<body>
-		{% include 'nav.html' %} {% block content %}
+		{% include 'nav.html' %} 
+        {% block content %}
 		<div class="container">
 			<div class="cards-parent">
+				<!-- Display resorts fetched from the database -->
 				{% for resort in resorts %}
 				<div class="mb-4">{% include 'card_component.html' with resort=resort %}</div>
+				{% endfor %}
+                
+                <!-- Display serialized resorts -->
+				{% for resort in serialized_resorts %}
+				<div class="mb-4">{% include 'listing_card.html' with resort=resort %}</div>
 				{% endfor %}
 			</div>
 		</div>
 
-		{% include 'listing_card.html' with resort=resort %}
+<!--end of changes-->		
+
 		<style>
 			body {
 				max-width: 100vw;
