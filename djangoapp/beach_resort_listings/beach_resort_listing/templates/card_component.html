@@ -1,7 +1,7 @@
 <div class="card card-component">
 	<img src="{{ resort.image }}" class="card-img-top" alt="{{ resort.name }}" />
 	<div class="card-body">
-		<h5 class="card-title">{{ resort.name }}</h5>
+		<h2 class="card-title" id="component_card_title">{{ resort.name }}</h2>
 		<div class="rating-meta">
 			<div class="rating">{% include 'star.html' %}</div>
 			<p class="card-text"><i class="fas fa-map-marker-alt"></i> {{ resort.location }}</p>
