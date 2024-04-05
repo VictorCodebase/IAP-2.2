@@ -30,10 +30,7 @@
 				<div class="mb-4">{% include 'card_component.html' with resort=resort %}</div>
 				{% endfor %}
                 
-                <!-- Display serialized resorts -->
-				{% for resort in serialized_resorts %}
 				<div class="mb-4">{% include 'listing_card.html' with resort=resort %}</div>
-				{% endfor %}
 			</div>
 		</div>
 

@@ -10,26 +10,17 @@
 		<div class="dark-shade"></div>
 		<h5 class="listing-card-title" id="resort_name">Example Resort</h5>
 	</div>
-	
-<!--changed the logic here kidogo-->
 
 	<div class="card-body">
-        <button type="button" class="btn btn-primary listing-button">Book</button>
-        <button class="btn btn-secondary listing-button">Open Official site</button>
-        <h4>Expect to find</h4>
-        <div class="amenities-meta" id="resort_amenities">
-            {% for amenity in resort.amenities %}
-                <div class="amenity">{{ amenity }}</div>
-            {% endfor %}
-        </div>
-        <h4>About the resort</h4>
-        <p class="card-text" id="resort_description">{{ resort.description }}</p>
-        <div class="available-meta">
-            <h4>Trending</h4>
-        </div>
-
-<!--end of changes-->		
-
+		<button type="button" class="btn btn-primary listing-button">Book</button>
+		<button class="btn btn-secondary listing-button">Open Official site</button>
+		<h4>Expect to find</h4>
+		<div class="amenities-meta" id="resort_amenities"></div>
+		<h4>About the resort</h4>
+		<p class="card-text" id="resort_description">{{ resort.description }}</p>
+		<div class="available-meta">
+			<h4>Trending</h4>
+		</div>
 		<div class="resort-shots" id="resort_shots">
 			<!-- {% for image in "*******" %}
 			<div class="resort-shot" draggable="false">
@@ -45,16 +36,15 @@
 			color: rgb(93, 93, 93);
 		}
 		.listing_display_card {
-			display: none;
+			 display: none; 
+			position: absolute;
 			min-width: 60lvw;
 			max-width: 80lvw;
 			height: 90lvh;
 			height: 90vh;
 			z-index: 1;
-			position: sticky;
-			bottom: 5vh;
-			bottom: 5lvh;
-			left: 0;
+			
+				left: 0;
 			right: 0;
 			margin-left: auto;
 			margin-right: auto;

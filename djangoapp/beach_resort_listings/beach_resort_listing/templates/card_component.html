@@ -9,13 +9,13 @@
 
 		<p class="card-text">{{ resort.desc }}</p>
 		
-		<button onclick="openlisting('{{ serialized_resorts }}', '{{ resort.id }}')" href="{{ resort.image }}" class="btn btn-primary">
+		<button onclick='openlisting("{{ resort.id }}")' data-info="{{ serialized_resorts|safe }}" href="{{ resort.image }}" class="btn btn-primary" id="learn_more_btn">
 			Learn More
 		</button>
 	</div>
 </div>
 
-<style>
+<style>	
 	.card-component {
 		max-width: 20rem;
 		min-width: 15rem;
