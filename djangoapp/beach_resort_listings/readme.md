@@ -4,8 +4,8 @@
 Project was completed by
 |name|Reg number|
 |---|---|
-|Mark Victor Kithinji||
-|Samuel Gicheha||
+|Mark Victor Kithinji|SCT212-0105/2022|
+|Samuel Gicheha|SCT212-0118/2022|  
 
 ## Project Overview
 This documentation provides a comprehensive guide to the hotel listings website project. The website aims to list major hotels, making it easier for users to find their next vacation destination.
@@ -41,7 +41,7 @@ Models.py defines the data models used in the application. These models represen
 ### How to Run the Application
 To run the application:
 1. Ensure Python and Django are installed on your system.
-2. Clone the project repository from [GitHub](https://github.com/example/project).
+2. Clone the project repository from [GitHub](https://github.com/VictorCodebase/IAP-2.2/edit/main/djangoapp/beach_resort_listings.git).
 3. Navigate to the project directory in your terminal.
 4. Run the following command to start the Django development server:
    ```
