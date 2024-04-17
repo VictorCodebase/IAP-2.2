@@ -1,5 +1,5 @@
 function openlisting(resortId) {
-	resortId = resortId - 2;
+	resortId = resortId - 2; // We subtract 2 because the resortId Json starts from 2, but the array starts from 0
 	learn_more = document.getElementById("learn_more_btn");
 	rawResortData = learn_more.getAttribute("data-info");
 	resortJson = rawResortData.replace(/'/g, '"');
@@ -24,10 +24,6 @@ function openlisting(resortId) {
 	for (i = 0; i < amenityArray.length; i++) {
 		amenity_div = document.createElement("div");
 		amenity_div.classList.add("border", "border-dark", "rounded", "amenity");
-
-		// icon = document.createElement("i");
-		// icon.classList.add(resort.amenityIcon[amenity], "amenity-icon");
-
 		text = document.createElement("p");
 		text.innerHTML = amenityArray[i];
 
