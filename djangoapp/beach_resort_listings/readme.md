@@ -55,31 +55,25 @@ To run the application:
 
 ## Project screenshots  
 
-### Desktop view  
-Home page:  
+### Desktop view 
+|Home Page| Hotel Clicked|
+|---|---|
+|![image](https://github.com/VictorCodebase/IAP-2.2/assets/135356007/1facb5ff-8255-4fa8-a3e2-1a5b9303b106)|![image](https://github.com/VictorCodebase/IAP-2.2/assets/135356007/6fecddb9-dffc-41b7-8d05-cef07694c5cb)|
+|---|---|
 
-![image](https://github.com/VictorCodebase/IAP-2.2/assets/135356007/1facb5ff-8255-4fa8-a3e2-1a5b9303b106)
-
-Listed hotel clicked:  
-
-![image](https://github.com/VictorCodebase/IAP-2.2/assets/135356007/6fecddb9-dffc-41b7-8d05-cef07694c5cb)
-
-Searching for hotel:  
-
-![image](https://github.com/VictorCodebase/IAP-2.2/assets/135356007/1c6f8dd6-b552-4dc9-8fe0-def65a152ba6)
+|Searching for Hotel|
+|---|
+|![image](https://github.com/VictorCodebase/IAP-2.2/assets/135356007/1c6f8dd6-b552-4dc9-8fe0-def65a152ba6)|
+|---|
 
 ### Mobile View
 Home page:  
-
-![WhatsApp Image 2024-04-17 at 10 01 19_b322775b](https://github.com/VictorCodebase/IAP-2.2/assets/135356007/39e17710-a636-46cf-8e35-da02414c447e)  
-
-Listed Hotel clicked:  
-![WhatsApp Image 2024-04-17 at 10 04 46_9459014c](https://github.com/VictorCodebase/IAP-2.2/assets/135356007/1bf5147f-4b1a-450a-aa84-092a7eb3cc16)  
-
-Searching for hotel:
-![WhatsApp Image 2024-04-17 at 10 06 24_4525dbcf](https://github.com/VictorCodebase/IAP-2.2/assets/135356007/15213ec2-ce39-4207-ab81-1c63f60539b3)
+|Home page| Hotel Clicked| Searching for Hotel|
+|---|---|---|
+|![WhatsApp Image 2024-04-17 at 10 01 19_b322775b](https://github.com/VictorCodebase/IAP-2.2/assets/135356007/39e17710-a636-46cf-8e35-da02414c447e)| ![WhatsApp Image 2024-04-17 at 10 04 46_9459014c](https://github.com/VictorCodebase/IAP-2.2/assets/135356007/1bf5147f-4b1a-450a-aa84-092a7eb3cc16) | ![WhatsApp Image 2024-04-17 at 10 06 24_4525dbcf](https://github.com/VictorCodebase/IAP-2.2/assets/135356007/15213ec2-ce39-4207-ab81-1c63f60539b3) |
 
 
+Project completed and compiled for Internet Application Programming class project. March 2024
 
 
 
