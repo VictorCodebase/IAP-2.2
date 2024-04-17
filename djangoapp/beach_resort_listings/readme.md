@@ -11,8 +11,9 @@ Project was completed by
 This documentation provides a comprehensive guide to the hotel listings website project. The website aims to list major hotels, making it easier for users to find their next vacation destination.
 
 ### Distinctiveness and Complexity
-The uniqueness of this project lies in its utilization of Django, a high-level Python web framework, for efficient web development. The complexities involved include managing data retrieval from the database upon page load and manipulating this data dynamically to present various hotel listings without redundant database queries.
+**Distinctiveness**  - The project's uniqueness stems from its emphasis on user interface (UI) design, prioritizing intuitive navigation and user experience. This focus on UI design sets it apart by ensuring that users can effortlessly navigate the website and access the desired information about hotels.   
 
+**Complexity**   - The project's complexity is amplified by the strategic optimization of data retrieval from the database. By fetching necessary data upon page load and strategically manipulating it, the website minimizes redundant database queries, enhancing performance and user responsiveness. 
 ### Design Approach
 The project adopts the Model-View-Template (MVT) architecture, a variation of the Model-View-Controller (MVC) pattern. This choice aligns with Django's framework, facilitating modular development, code organization, and scalability. Django's robust built-in features, such as its ORM (Object-Relational Mapping) system, authentication, and routing mechanisms, further enhance development efficiency and maintainability.
 
