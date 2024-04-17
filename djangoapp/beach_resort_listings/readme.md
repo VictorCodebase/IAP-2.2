@@ -41,7 +41,7 @@ Models.py defines the data models used in the application. These models represen
 ### How to Run the Application
 To run the application:
 1. Ensure Python and Django are installed on your system.
-2. Clone the project repository from [GitHub](https://github.com/VictorCodebase/IAP-2.2/edit/main/djangoapp/beach_resort_listings.git).
+2. Clone the project repository from [GitHub](https://github.com/VictorCodebase/IAP-2.2/tree/main/djangoapp/beach_resort_listings.git).
 3. Navigate to the project directory in your terminal.
 4. Run the following command to start the Django development server:
    ```
