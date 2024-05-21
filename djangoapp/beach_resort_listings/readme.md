@@ -6,6 +6,8 @@ Project was completed by
 |---|---|
 |Mark Victor Kithinji|SCT212-0105/2022|
 |Samuel Gicheha|SCT212-0118/2022|  
+|Derick Richards|SCT212-0192/2022|  
+|Josiah Ndirangu|SCT212-0111/2022|  
 
 ## Project Overview
 This documentation provides a comprehensive guide to the hotel listings website project. The website aims to list major hotels, making it easier for users to find their next vacation destination.
